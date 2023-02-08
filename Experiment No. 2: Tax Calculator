@@ -1,0 +1,51 @@
+# Declaring variables
+def monthly_income(m):
+    mIncome = monthly_income(m)
+def annual_income(a):
+    aIncome = annual_income(a)
+def monthly_income_tax(mt):
+    mTax = monthly_income_tax(mt)
+def annual_income_tax(at):
+    aTax = annual_income_tax(at)
+
+# Ask user for the value of m
+m = float(input("Monthly Income: "))
+a = m*12
+print("Annual Income: " + str(a))
+
+# Monthly and annual income tax conditional statements and corresponding formulas
+if (a < 250000):
+    mt = at/12
+    at = a
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
+
+elif (a > 250000) and (a <= 400000):
+    mt = at/12
+    at = a + (250000*0.15)
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
+    
+elif (a > 400000) and (a <= 800000):
+    mt = at/12
+    at = a + 22500 + (400000*0.20)
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
+    
+elif (a > 800000) and (a <= 2000000):
+    mt = at/12
+    at = a + 102500 + (800000*0.25)
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
+    
+elif (a > 2000000) and (a <= 8000000):
+    mt = at/12
+    at = a + 402500 + (2000000*0.30)
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
+
+else :
+    mt = at/12
+    at = a + 2202500 + (8000000*0.35)
+    print("\nMonthly Income Tax: " + str(mt))
+    print("Annual Income Tax: " + str(at))
