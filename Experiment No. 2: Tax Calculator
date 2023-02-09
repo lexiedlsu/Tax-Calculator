@@ -15,28 +15,28 @@ print("Annual Income: " + str(a))
 
 # Monthly and annual income tax conditional statements and corresponding formulas
 if (a < 250000):
-    mt = at/12
     at = a
+    mt = at/12
 
 elif (a > 250000) and (a <= 400000):
-    mt = at/12
     at = a + (250000*0.15)
+    mt = at/12
     
 elif (a > 400000) and (a <= 800000):
-    mt = at/12
     at = a + 22500 + (400000*0.20)
+    mt = at/12
     
 elif (a > 800000) and (a <= 2000000):
-    mt = at/12
     at = a + 102500 + (800000*0.25)
+    mt = at/12
     
 elif (a > 2000000) and (a <= 8000000):
-    mt = at/12
     at = a + 402500 + (2000000*0.30)
+    mt = at/12
 
 else :
-    mt = at/12
     at = a + 2202500 + (8000000*0.35)
+    mt = at/12
     
 print("\nMonthly Income Tax: " + str(mt))
 print("Annual Income Tax: " + str(at))
